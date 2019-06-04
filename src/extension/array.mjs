@@ -22,6 +22,10 @@ export const init = () => {
 		}
 		return generate ? _this : this;
 	}
+	Array.prototype.avarage = function () {
+		let sum = this.reduce((x, y) => x + y);
+		return sum / this.length;
+	}
 	Array.prototype.xor = function (status = {}) {
 		const generate = status.generate || false;
 		const value = status.value || 2;
