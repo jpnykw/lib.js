@@ -21,3 +21,14 @@ Array.prototype.shuffle = function (status = {}) {
 	}
 	return generate ? _this : this;
 }
+Array.prototype.xor = function (status = {}) {
+	const generate = status.generate || false;
+	const value = status.value || 2;
+	const _this = [...this];
+	this.forEach((_, i) => {
+		console.log(this[i]);
+		const xor = this[i] ^ value;
+		generate ? (_this[i] = xor) : (this[i] = xor);
+	});
+	return generate ? _this : this;
+}
