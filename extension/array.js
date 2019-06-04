@@ -20,11 +20,11 @@ Array.prototype.shuffle = function (status = {}) {
 
 		while (x === y) {
 			y = (Math.random() * this.length) >> 0;
-        }
+		}
 
 		generate ?
-		[_this[x], _this[y]] = [_this[y], _this[x]] :
-		[this[x], this[y]] = [this[y], this[x]];
+			[_this[x], _this[y]] = [_this[y], _this[x]] :
+			[this[x], this[y]] = [this[y], this[x]];
 	}
 
 	return generate ? _this : this;
