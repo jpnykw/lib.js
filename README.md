@@ -1,0 +1,2 @@
+# lib.js
+The library.
