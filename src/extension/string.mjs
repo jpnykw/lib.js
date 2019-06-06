@@ -1,1 +1,3 @@
-// TODO:
+export const init = () => {
+  // TODO:
+};
